@@ -309,7 +309,7 @@ int PadiWebServer::serveStatic(SdFatFs& fs, String path){
       return ret;
 }
 
-size_t PadiWebServer::streamFile(SdFatFile &file, const String& contentType,  const String& fileName){
+size_t PadiWebServer::streamFile(Stream &file, const String& contentType,  const String& fileName){
 
       char buffer[2048];
       size_t size = 0;

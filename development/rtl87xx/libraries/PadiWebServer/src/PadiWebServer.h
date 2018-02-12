@@ -130,7 +130,7 @@ public:
 
   static String urlDecode(const String& text);
 
-  size_t streamFile(SdFatFile &file, const String& contentType,  const String& fileName);
+  size_t streamFile(Stream &file, const String& contentType,  const String& fileName);
 
 protected:
   void _addRequestHandler(RequestHandler* handler);
